@@ -1,0 +1,6 @@
+dotnet new sln -o ContosoDashboard
+dotnet new web -n ContosoDashboard.Web -o ContosoDashboard/ContosoDashboard.Web
+dotnet sln ContosoDashboard/ContosoDashboard.sln add ContosoDashboard/ContosoDashboard.Web/ContosoDashboard.Web.csproj
+cd ContosoDashboard/ContosoDashboard.Web
+dotnet restore
+dotnet run

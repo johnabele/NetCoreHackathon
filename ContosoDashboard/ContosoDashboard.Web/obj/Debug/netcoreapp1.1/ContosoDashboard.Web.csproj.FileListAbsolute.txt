@@ -1,0 +1,9 @@
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\bin\Debug\netcoreapp1.1\ContosoDashboard.Web.deps.json
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\bin\Debug\netcoreapp1.1\ContosoDashboard.Web.runtimeconfig.json
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\bin\Debug\netcoreapp1.1\ContosoDashboard.Web.runtimeconfig.dev.json
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\bin\Debug\netcoreapp1.1\ContosoDashboard.Web.dll
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\bin\Debug\netcoreapp1.1\ContosoDashboard.Web.pdb
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\obj\Debug\netcoreapp1.1\ContosoDashboard.Web.AssemblyInfo.cs
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\obj\Debug\netcoreapp1.1\ContosoDashboard.Web.dll
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\obj\Debug\netcoreapp1.1\ContosoDashboard.Web.pdb
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Web\obj\Debug\netcoreapp1.1\ContosoDashboard.Web.csprojResolveAssemblyReference.cache

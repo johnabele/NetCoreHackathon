@@ -16,9 +16,9 @@ namespace ContosoClaimService.Tests
             //Arrage
             List<Claim> claims = new List<Claim>
             {
-                new Claim() { PolicyId = "000001", ClaimId = "12345", Payment = new Payment() { AmountPaid = 1921.39m } },
-                new Claim() { PolicyId = "000001", ClaimId = "12346", Payment = new Payment() { AmountPaid = 92.99m } },
-                new Claim() { PolicyId = "000001", ClaimId = "12347", Payment = new Payment() { AmountPaid = 768.01m } }
+                new Claim() { ClaimId = "840000120001", MemberId = "1", DateOfService = new DateTime(2017, 3, 8), ClaimStatus = "In Progress", Provider = "Walgreens #12273", AmountBilled = 378.00m, AmountMemberResponsibility = 24.75m },
+                new Claim() { ClaimId = "839500120044", MemberId = "1", DateOfService = new DateTime(2017, 1, 14), ClaimStatus = "Completed", Provider = "ORAL FACIAL SURGERY CENTER", AmountBilled = 912.00m, AmountMemberResponsibility = 314.00m },
+                new Claim() { ClaimId = "839211128735", MemberId = "1", DateOfService = new DateTime(2016, 8, 22), ClaimStatus = "Completed", Provider = "COLLINS D REID", AmountBilled = 654.00m, AmountMemberResponsibility = 94.67m },
             };
 
             //Act

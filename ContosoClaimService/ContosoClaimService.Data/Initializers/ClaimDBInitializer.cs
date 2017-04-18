@@ -25,12 +25,24 @@ namespace ConotosClaimService.Data.Initializers
                 return;   // DB has already been seeded
             }
 
-            IList<Claim> claims = new List<Claim>();
-
-            claims.Add(new Claim() { PolicyId = "000001", ClaimId = "12345", Payment = new Payment() { AmountPaid = 1921.39m } });
-            claims.Add(new Claim() { PolicyId = "000001", ClaimId = "12346", Payment = new Payment() { AmountPaid = 92.99m } });
-            claims.Add(new Claim() { PolicyId = "000001", ClaimId = "12347", Payment = new Payment() { AmountPaid = 768.01m } });
-
+            IList<Claim> claims = new List<Claim>
+            {
+                new Claim() { ClaimId = "840000120001", MemberId = "1", DateOfService = new DateTime(2017, 3, 8), ClaimStatus = "In Progress", Provider = "Walgreens #12273", AmountBilled = 378.00m, AmountMemberResponsibility = 24.75m },
+                new Claim() { ClaimId = "839500120042", MemberId = "1", DateOfService = new DateTime(2017, 1, 14), ClaimStatus = "Completed", Provider = "ORAL FACIAL SURGERY CENTER", AmountBilled = 912.00m, AmountMemberResponsibility = 314.00m },
+                new Claim() { ClaimId = "839211128733", MemberId = "1", DateOfService = new DateTime(2016, 8, 22), ClaimStatus = "Completed", Provider = "COLLINS D REID", AmountBilled = 654.00m, AmountMemberResponsibility = 94.67m },
+                new Claim() { ClaimId = "840000120004", MemberId = "2", DateOfService = new DateTime(2017, 3, 8), ClaimStatus = "In Progress", Provider = "Walgreens #12273", AmountBilled = 378.00m, AmountMemberResponsibility = 24.75m },
+                new Claim() { ClaimId = "839500120045", MemberId = "2", DateOfService = new DateTime(2017, 1, 14), ClaimStatus = "Completed", Provider = "ORAL FACIAL SURGERY CENTER", AmountBilled = 912.00m, AmountMemberResponsibility = 314.00m },
+                new Claim() { ClaimId = "839211128736", MemberId = "2", DateOfService = new DateTime(2016, 8, 22), ClaimStatus = "Completed", Provider = "COLLINS D REID", AmountBilled = 654.00m, AmountMemberResponsibility = 94.67m },
+                new Claim() { ClaimId = "840000120007", MemberId = "3", DateOfService = new DateTime(2017, 3, 8), ClaimStatus = "In Progress", Provider = "Walgreens #12273", AmountBilled = 378.00m, AmountMemberResponsibility = 24.75m },
+                new Claim() { ClaimId = "839500120048", MemberId = "3", DateOfService = new DateTime(2017, 1, 14), ClaimStatus = "Completed", Provider = "ORAL FACIAL SURGERY CENTER", AmountBilled = 912.00m, AmountMemberResponsibility = 314.00m },
+                new Claim() { ClaimId = "839211128739", MemberId = "3", DateOfService = new DateTime(2016, 8, 22), ClaimStatus = "Completed", Provider = "COLLINS D REID", AmountBilled = 654.00m, AmountMemberResponsibility = 94.67m },
+                new Claim() { ClaimId = "840000120099", MemberId = "4", DateOfService = new DateTime(2017, 3, 8), ClaimStatus = "In Progress", Provider = "Walgreens #12273", AmountBilled = 378.00m, AmountMemberResponsibility = 24.75m },
+                new Claim() { ClaimId = "839500120088", MemberId = "4", DateOfService = new DateTime(2017, 1, 14), ClaimStatus = "Completed", Provider = "ORAL FACIAL SURGERY CENTER", AmountBilled = 912.00m, AmountMemberResponsibility = 314.00m },
+                new Claim() { ClaimId = "839211128777", MemberId = "4", DateOfService = new DateTime(2016, 8, 22), ClaimStatus = "Completed", Provider = "COLLINS D REID", AmountBilled = 654.00m, AmountMemberResponsibility = 94.67m },
+                new Claim() { ClaimId = "840000120066", MemberId = "5", DateOfService = new DateTime(2017, 3, 8), ClaimStatus = "In Progress", Provider = "Walgreens #12273", AmountBilled = 378.00m, AmountMemberResponsibility = 24.75m },
+                new Claim() { ClaimId = "839500120055", MemberId = "5", DateOfService = new DateTime(2017, 1, 14), ClaimStatus = "Completed", Provider = "ORAL FACIAL SURGERY CENTER", AmountBilled = 912.00m, AmountMemberResponsibility = 314.00m },
+                new Claim() { ClaimId = "839211128744", MemberId = "5", DateOfService = new DateTime(2016, 8, 22), ClaimStatus = "Completed", Provider = "COLLINS D REID", AmountBilled = 654.00m, AmountMemberResponsibility = 94.67m }
+            };
             foreach (Claim claim in claims)
             {
                 context.Claims.Add(claim);

@@ -10,18 +10,18 @@ namespace ContosoClaimService.API.ViewModels.Mappers
             CreateMap<Claim, ClaimViewModel>()
                 .ForMember(vm => vm.ClaimId,
                 map => map.MapFrom(e => e.ClaimId))
-                .ForMember(vm => vm.PolicyId,
-                map => map.MapFrom(e => e.PolicyId))
-                .ForMember(vm => vm.DateOfClaim,
-                map => map.MapFrom(e => e.DateOfClaim))
-                .ForMember(vm => vm.DateOfSettlement,
-                map => map.MapFrom(e => e.DateOfSettlement));
-
-            CreateMap<Payment, PaymentViewModel>()
-                .ForMember(vm => vm.PaymentId,
-                map => map.MapFrom(e => e.PaymentId))
-                .ForMember(vm => vm.AmountPaid,
-                map => map.MapFrom(e => e.AmountPaid));
+                .ForMember(vm => vm.MemberId,
+                map => map.MapFrom(e => e.MemberId))
+                .ForMember(vm => vm.DateOfService,
+                map => map.MapFrom(e => e.DateOfService))
+                .ForMember(vm => vm.ClaimStatus,
+                map => map.MapFrom(e => e.ClaimStatus))
+                .ForMember(vm => vm.Provider,
+                map => map.MapFrom(e => e.Provider))
+                .ForMember(vm => vm.AmountBilled,
+                map => map.MapFrom(e => e.AmountBilled))
+                .ForMember(vm => vm.AmountMemberResponsibility,
+                map => map.MapFrom(e => e.AmountMemberResponsibility));
         }
     }
 }

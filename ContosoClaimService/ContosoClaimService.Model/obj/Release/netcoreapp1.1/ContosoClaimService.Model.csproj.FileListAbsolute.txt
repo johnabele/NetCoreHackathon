@@ -1,0 +1,6 @@
+C:\Users\jdabe_000\Downloads\NetCoreHackathon-master\NetCoreHackathon-master\ContosoClaimService\ContosoClaimService.Model\bin\Release\netcoreapp1.1\ContosoClaimService.Model.deps.json
+C:\Users\jdabe_000\Downloads\NetCoreHackathon-master\NetCoreHackathon-master\ContosoClaimService\ContosoClaimService.Model\bin\Release\netcoreapp1.1\ContosoClaimService.Model.dll
+C:\Users\jdabe_000\Downloads\NetCoreHackathon-master\NetCoreHackathon-master\ContosoClaimService\ContosoClaimService.Model\bin\Release\netcoreapp1.1\ContosoClaimService.Model.pdb
+C:\Users\jdabe_000\Downloads\NetCoreHackathon-master\NetCoreHackathon-master\ContosoClaimService\ContosoClaimService.Model\obj\Release\netcoreapp1.1\ContosoClaimService.Model.AssemblyInfo.cs
+C:\Users\jdabe_000\Downloads\NetCoreHackathon-master\NetCoreHackathon-master\ContosoClaimService\ContosoClaimService.Model\obj\Release\netcoreapp1.1\ContosoClaimService.Model.dll
+C:\Users\jdabe_000\Downloads\NetCoreHackathon-master\NetCoreHackathon-master\ContosoClaimService\ContosoClaimService.Model\obj\Release\netcoreapp1.1\ContosoClaimService.Model.pdb

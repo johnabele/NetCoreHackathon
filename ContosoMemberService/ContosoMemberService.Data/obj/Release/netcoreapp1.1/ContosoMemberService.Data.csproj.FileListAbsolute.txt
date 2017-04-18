@@ -1,0 +1,7 @@
+C:\Users\jdabe_000\Projects\Contoso\ContosoMemberService\ContosoMemberService.Data\bin\Release\netcoreapp1.1\ContosoMemberService.Data.deps.json
+C:\Users\jdabe_000\Projects\Contoso\ContosoMemberService\ContosoMemberService.Data\bin\Release\netcoreapp1.1\ContosoMemberService.Data.dll
+C:\Users\jdabe_000\Projects\Contoso\ContosoMemberService\ContosoMemberService.Data\bin\Release\netcoreapp1.1\ContosoMemberService.Data.pdb
+C:\Users\jdabe_000\Projects\Contoso\ContosoMemberService\ContosoMemberService.Data\obj\Release\netcoreapp1.1\ContosoMemberService.Data.csprojResolveAssemblyReference.cache
+C:\Users\jdabe_000\Projects\Contoso\ContosoMemberService\ContosoMemberService.Data\obj\Release\netcoreapp1.1\ContosoMemberService.Data.AssemblyInfo.cs
+C:\Users\jdabe_000\Projects\Contoso\ContosoMemberService\ContosoMemberService.Data\obj\Release\netcoreapp1.1\ContosoMemberService.Data.dll
+C:\Users\jdabe_000\Projects\Contoso\ContosoMemberService\ContosoMemberService.Data\obj\Release\netcoreapp1.1\ContosoMemberService.Data.pdb

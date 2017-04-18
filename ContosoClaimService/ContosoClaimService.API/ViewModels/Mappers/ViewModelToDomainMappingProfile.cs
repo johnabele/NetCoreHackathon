@@ -7,10 +7,8 @@ namespace ContosoClaimService.API.ViewModels.Mappers
     {
         public ViewModelToDomainMappingProfile()
         {
-            CreateMap<ClaimViewModel, Claim>()
-               .ForMember(c => c.Payment, map => map.UseValue(new Payment()));
+            CreateMap<ClaimViewModel, Claim>();
 
-            CreateMap<PaymentViewModel, Payment>();
         }
     }
 }

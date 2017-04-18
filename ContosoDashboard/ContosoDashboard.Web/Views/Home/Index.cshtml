@@ -1,0 +1,68 @@
+﻿@model ContosoDashboard.Web.ViewModels.DashboardViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+        <h1 class="page-header">Welcome, @Model.Member.FirstName  @Model.Member.LastName </h1>
+        <div class="col-md-6">
+            <div class="panel panel-primary" style="height:110px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Member Information</h3>
+                </div>
+                <div class="panel-body">
+                    Member Since: @Model.Member.CreatedDate.ToString("MMMM dd, yyyy")<br />
+                    SSN: @Model.Member.TaxId
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-success" style="height:110px;">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Find a Doctor</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for a Healthcare provider">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Submit</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="clearfix"></div>
+            <h2 class="sub-header">Claims</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Claim Id</th>
+                            <th>Member Id</th>
+                            <th>Date Of Service</th>
+                            <th>Claim Status</th>
+                            <th>Provider</th>
+                            <th>Amount Billed</th>
+                            <th>Your Responsibility</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Claims.OrderByDescending(x => x.DateOfService))
+                        {
+                            <tr>
+                                <td>@item.ClaimId</td>
+                                <td>@item.MemberId</td>
+                                <td>@item.DateOfService.ToString("MMMM dd, yyyy")</td>
+                                <td>@item.ClaimStatus</td>
+                                <td>@item.Provider</td>
+                                <td>$@String.Format("{0:0.00}", item.AmountBilled)</td>
+                                <td>$@String.Format("{0:0.00}", item.AmountMemberResponsibility)</td>
+                                <td><a class="btn btn-primary" href="/Claim/Index/@item.ClaimId">View</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>

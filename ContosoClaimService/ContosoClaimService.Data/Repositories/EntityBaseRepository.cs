@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Collections.Generic;
 using System.Linq;
+using System;
+using System.Linq.Expressions;
 
 namespace ContosoClaimService.Data.Repositories
 {
@@ -16,18 +18,26 @@ namespace ContosoClaimService.Data.Repositories
         {
             _context = context;
         }
-        public virtual IEnumerable<T> GetAll()
-        {
-            IQueryable<T> query = _context.Set<T>();
 
-            return query.AsEnumerable();
+        public IEnumerable<T> FindBy(Expression<Func<T, bool>> predicate)
+        {
+            IEnumerable <T> item = null;
+            IQueryable<T> dbQuery = _context.Set<T>();
+            item = dbQuery
+                    .AsNoTracking()
+                    .Where(predicate)
+                    .ToList();
+            return item;
         }
 
-        public virtual void Add(T entity)
+        public T GetSingle(Expression<Func<T, bool>> predicate)
         {
-            EntityEntry dbEntityEntry = _context.Entry<T>(entity);
-            _context.Set<T>().Add(entity);
+            T item = null;
+            IQueryable<T> dbQuery = _context.Set<T>();
+            item = dbQuery
+                    .AsNoTracking() 
+                    .FirstOrDefault(predicate);
+            return item;
         }
-
     }
 }

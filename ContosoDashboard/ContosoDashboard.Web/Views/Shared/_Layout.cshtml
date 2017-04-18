@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    Contoso Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#">Manage My Account <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">My Contoso Plan</a></li>
+                    <li><a href="#">Stay Healthy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 main">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

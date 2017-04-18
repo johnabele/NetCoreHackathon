@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ContosoClaimService.Data</id>
+    <version>1.0.0</version>
+    <authors>ContosoClaimService.Data</authors>
+    <owners>ContosoClaimService.Data</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="ContosoClaimService.Model" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\jdabe_000\Downloads\NetCoreHackathon-master\NetCoreHackathon-master\ContosoClaimService\ContosoClaimService.Data\bin\Debug\netstandard1.4\ContosoClaimService.Data.dll" target="lib\netstandard1.4\ContosoClaimService.Data.dll" />
+  </files>
+</package>

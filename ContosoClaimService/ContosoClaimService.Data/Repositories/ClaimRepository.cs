@@ -14,12 +14,5 @@ namespace ConotosClaimService.Data.Repositories
         {
             _context = context;
         }
-
-        public override IEnumerable<Claim> GetAll()
-        {
-            IQueryable<Claim> query = _context.Set<Claim>();
-
-            return query.Include("Payment").AsEnumerable();
-        }
     }
 }

@@ -15,14 +15,21 @@ namespace ContosoClaimService.Controllers
         {
             _claimRepository = claimRepository;
         }
-        [HttpGet("GetAllClaims", Name = "GetAllClaims")]
-        public IActionResult GetAllClaims()
+        [HttpGet("GetClaimsByMember/{id}")]
+        public IActionResult GetClaimsByMember(int id)
         {
-            var _claims = _claimRepository.GetAll();
+            var _claims = _claimRepository.FindBy(x => x.MemberId == id.ToString());
             IEnumerable<ClaimViewModel> claimVMs = Mapper.Map<IEnumerable<Claim>, IEnumerable<ClaimViewModel>>(_claims);
 
             return Json(claimVMs);
         }
+        [HttpGet("GetClaimById/{id}")]
+        public IActionResult GetClaimById(string id)
+        {
+            var _claims = _claimRepository.GetSingle(x => x.ClaimId == id);
+            ClaimViewModel claimVM = Mapper.Map<Claim, ClaimViewModel>(_claims);
 
+            return Json(claimVM);
+        }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Services\bin\Debug\netstandard1.4\ContosoDashboard.Services.deps.json
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Services\bin\Debug\netstandard1.4\ContosoDashboard.Services.dll
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Services\bin\Debug\netstandard1.4\ContosoDashboard.Services.pdb
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Services\obj\Debug\netstandard1.4\ContosoDashboard.Services.csprojResolveAssemblyReference.cache
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Services\obj\Debug\netstandard1.4\ContosoDashboard.Services.AssemblyInfo.cs
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Services\obj\Debug\netstandard1.4\ContosoDashboard.Services.dll
+C:\Users\jdabe_000\Projects\Contoso\ContosoDashboard\ContosoDashboard.Services\obj\Debug\netstandard1.4\ContosoDashboard.Services.pdb
