@@ -17,10 +17,4 @@ namespace ConotosClaimService.Data
             modelBuilder.Entity<Claim>()
                 .ToTable("Claim");
 
-            //modelBuilder.Entity<Claim>().Property(i => i.AmountBilled)
-            //    .HasColumnType("Money");
-            //modelBuilder.Entity<Claim>().Property(i => i.AmountMemberResponsibility)
-            //    .HasColumnType("Money");
-        }
-    }
-}
+            
