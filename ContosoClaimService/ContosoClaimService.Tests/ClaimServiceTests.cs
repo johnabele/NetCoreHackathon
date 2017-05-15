@@ -22,7 +22,7 @@ namespace ContosoClaimService.Tests
             };
 
             //Act
-            List<ClaimViewModel> claimVMs = Mapper.Map<List<Claim>, List<ClaimViewModel>>(claims);
+            //List<ClaimViewModel> claimVMs = Mapper.Map<List<Claim>, List<ClaimViewModel>>(claims);
 
             //Assert
             //Assert.AreEqual(claims[0].Payment.AmountPaid, claimVMs[0].Payment.AmountPaid);
