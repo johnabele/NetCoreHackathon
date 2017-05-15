@@ -17,4 +17,6 @@ namespace ConotosClaimService.Data
             modelBuilder.Entity<Claim>()
                 .ToTable("Claim");
 
-            
+        }
+    }
+}
